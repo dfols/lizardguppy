@@ -65,7 +65,7 @@
 
         img {
             margin-bottom: 50px;
-            border-radius: 15px;
+            padding: 20px;
         }
 
         button {
@@ -82,14 +82,27 @@
 </head>
 
 <body>
-    <img src="guppy.webp" alt="Guppy" />
+    <img src="guppy.webp" id="image" alt="Guppy" />
     <button id="button">Hi</button>
     <audio src="hey_ya.mp3" id="audio"></audio>
     <script>
-        let button = document.getElementById("button")
+        let button = document.getElementById("button");
         let audio = document.getElementById("audio");
+        let image = document.getElementById("image");
+        let flipped = false;
+        const interval = 750; // 750 ms for 80 BPM
+
+        function flipImage() {
+            flipped = !flipped;
+            if (flipped) {
+                image.style.transform = 'scaleX(-1)';
+            } else {
+                image.style.transform = 'scaleX(1)';
+            }
+        }
         button.addEventListener("click", () => {
             audio.play();
+            setInterval(flipImage, interval);
         })
     </script>
 </body>
