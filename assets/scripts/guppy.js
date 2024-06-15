@@ -5,7 +5,7 @@ let image = document.getElementById("image");
 let flipInterval;
 let flipped = false;
 const interval = 375;
-
+audio.volume = 0.7;
 
 function flipImage() {
     flipped = !flipped;
