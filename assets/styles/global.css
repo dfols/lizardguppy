@@ -72,8 +72,8 @@ h6 {
 header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
+    padding: 0px 14px;
+    margin-top: 14px;
     background-color: var(--nav-bg-color);
     color: var(--nav-text-color);
     backdrop-filter: blur(10px);
@@ -87,33 +87,26 @@ nav ul {
     padding: 0;
     margin: 0;
     display: flex;
-    gap: 15px;
+    gap: 8px;
     align-items: center;
-}
-
-nav ul li {
-    display: inline-block;
 }
 
 nav ul li a {
     text-decoration: none;
     color: var(--nav-text-color);
-    padding: 5px 10px;
-    display: block;
 }
 
-nav ul li a.active {
+.active {
     font-weight: bold;
 }
 
 nav span {
     color: var(--nav-text-color);
-    display: inline-block;
-    vertical-align: middle;
 }
 
 .theme-toggle {
     display: flex;
+    justify-content: center;
     align-items: center;
     cursor: pointer;
 }
@@ -123,5 +116,29 @@ nav span {
 }
 
 .theme-toggle .emoji {
-    font-size: 1.5em;
+    font-size: 1.25em;
+}
+
+.separator {
+    pointer-events: none;
+    user-select: none;
+    padding: 0 10px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+footer p {
+    text-align: center;
+}
+
+footer img {
+    height: 72px;
+}
+
+footer a {
+    display: flex;
+    justify-content: center;
 }
