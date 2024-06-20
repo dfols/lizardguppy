@@ -2,51 +2,53 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lizard Guppy</title>
+    <link rel="stylesheet" href="/assets/styles/global.css?v=1.2">
+    <link rel="stylesheet" href="/assets/styles/index.css?v=1.2">
     <link rel="manifest" href="/manifest.json">
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
     <link rel="icon" type="image/x-icon" href="/assets/icons/favicon.ico">
-    <link rel="stylesheet" href="/assets/styles/global.css?v=1.2">
-    <link rel="stylesheet" href="/assets/styles/index.css?v=1.2">
     <meta property="og:title" content="Lizard Guppy">
     <meta property="og:description" content="Check out this amazing Guppy!">
     <meta property="og:image" content="http://lizardguppy.com/assets/images/guppy.webp">
     <meta property="og:url" content="http://lizardguppy.com/index.html">
     <meta property="og:type" content="website">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
     <header>
         <nav>
-            <ul>
-                <li><a href="./index.html" class="active">Home</a></li>
+            <ul id="nav-list">
+                <li class="nav-list-item"><a href="./index.html" class="nav-list-link active">Home</a></li>
                 <li class="separator">|</li>
-                <li><a href="pages/guppy.html">Guppy Dance</a></li>
+                <li class="nav-list-item"><a href="pages/guppy.html" class="nav-list-link">Guppy Dance</a></li>
                 <li class="separator">|</li>
-                <li><a href="pages/music.html">Music</a></li>
+                <li class="nav-list-item"><a href="pages/music.html" class="nav-list-link">Music</a></li>
             </ul>
         </nav>
-        <label class="theme-toggle">
-            <input type="checkbox" id="theme-switcher">
-            <span class="emoji">🌞</span>
+        <label id="theme-toggle">
+            <input type="checkbox" id="theme-toggle-switch" aria-label="Toggle theme">
+            <span id="theme-icon">🌞</span>
         </label>
     </header>
-    <div class="content">
-        <img src="assets/images/homepage.gif" alt="Under construction gif">
+
+
+    <main>
+        <img src="assets/images/homepage.gif" alt="Under construction gif" id="gif">
         <h1>Stay tuned!! (:</h1>
-    </div>
+    </main>
+
     <footer>
-        <div class="content-f">
-            <p>made with <span class="heart">❤️</span></p>
-            <a href="https://html5.validator.nu/?doc=https%3A%2F%2Flizardguppy.com">
-                <img src="assets/images/html5-validator-badge.svg" alt="HTML5 Valid" />
-            </a>
-        </div>
+        <p>made with <span class="heart">❤️</span></p>
+        <a href="https://html5.validator.nu/?doc=https%3A%2F%2Flizardguppy.com" class="validator-image-container">
+            <img src="assets/images/html5-validator-badge.svg" alt="HTML5 Valid" class="validator-image">
+        </a>
     </footer>
+
     <script src="assets/scripts/theme.js"></script>
 </body>
 

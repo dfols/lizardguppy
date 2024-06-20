@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const themeSwitcher = document.getElementById('theme-switcher');
+    const themeSwitcher = document.getElementById('theme-toggle-switch');
     const currentTheme = localStorage.getItem('theme') || 'light';
 
     if (currentTheme === 'dark') {
@@ -19,18 +19,4 @@ document.addEventListener('DOMContentLoaded', function () {
             localStorage.setItem('theme', 'light');
         }
     });
-
-    // "Secret" console log
-    console.log(`
-        _______________________________________
-       / Hi! I'm the secret cow in the console \\
-       | and you found my secret hiding spot!  |
-       \\ Mooooooooooooooooooo!                 /
-        ---------------------------------------
-               \\   ^__^
-                \\  (oo)\\_______
-                   (__)\\       )\\/\\
-                       ||----w |
-                       ||     ||
-       `);
 });

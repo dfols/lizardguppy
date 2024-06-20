@@ -1,19 +1,36 @@
 h1 {
     text-align: center;
-    margin-top: 50px;
 }
 
-img {
+#gif {
+    width: 95%;
     max-width: 100%;
-    width: 50%;
-    height: auto;
 }
 
-.content {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: calc(100vh - 60px);
+/* Small screens and up */
+@media (min-width: 480px) {
+    #gif {
+        width: 85%;
+    }
+}
+
+/* Medium screens and up */
+@media (min-width: 600px) {
+    #gif {
+        width: 75%;
+    }
+}
+
+/* Medium-large screens and up */
+@media (min-width: 800px) {
+    #gif {
+        width: 70%;
+    }
+}
+
+/* Large screens and up */
+@media (min-width: 1024px) {
+    #gif {
+        width: 60%;
+    }
 }

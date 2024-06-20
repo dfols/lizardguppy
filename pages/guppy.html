@@ -22,24 +22,34 @@
 <body>
     <header>
         <nav>
-            <ul>
-                <li><a href="../index.html">Home</a></li>
+            <ul id="nav-list">
+                <li class="nav-list-item"><a href="../index.html" class="nav-list-link">Home</a></li>
                 <li class="separator">|</li>
-                <li><a href="guppy.html" class="active">Guppy Dance</a></li>
+                <li class="nav-list-item"><a href="./guppy.html" class="nav-list-link active">Guppy Dance</a></li>
                 <li class="separator">|</li>
-                <li><a href="music.html">Music</a></li>
+                <li class="nav-list-item"><a href="./music.html" class="nav-list-link">Music</a></li>
             </ul>
         </nav>
-        <label class="theme-toggle">
-            <input type="checkbox" id="theme-switcher">
-            <span class="emoji">🌞</span>
+        <label id="theme-toggle">
+            <input type="checkbox" id="theme-toggle-switch" aria-label="Toggle theme">
+            <span id="theme-icon">🌞</span>
         </label>
     </header>
-    <div class="content">
-        <img src="../assets/images/guppy.webp" id="image" alt="Guppy" />
+
+
+    <main>
+        <img src="../assets/images/guppy.webp" id="guppy-image" alt="Guppy" />
         <button id="button">Hi</button>
         <audio src="../assets/audio/hey_ya.mp3" id="audio"></audio>
-    </div>
+    </main>
+
+    <footer>
+        <p>made with <span class="heart">❤️</span></p>
+        <a href="https://html5.validator.nu/?doc=https%3A%2F%2Flizardguppy.com/pages/guppy.html"
+            class="validator-image-container">
+            <img src="../assets/images/html5-validator-badge.svg" alt="HTML5 Valid" class="validator-image">
+        </a>
+    </footer>
     <script src="../assets/scripts/guppy.js"></script>
     <script src="../assets/scripts/theme.js"></script>
 </body>

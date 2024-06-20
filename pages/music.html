@@ -22,37 +22,46 @@
 <body>
     <header>
         <nav>
-            <ul>
-                <li><a href="../index.html">Home</a></li>
+            <ul id="nav-list">
+                <li class="nav-list-item"><a href="../index.html" class="nav-list-link">Home</a></li>
                 <li class="separator">|</li>
-                <li><a href="guppy.html">Guppy Dance</a></li>
+                <li class="nav-list-item"><a href="./guppy.html" class="nav-list-link">Guppy Dance</a></li>
                 <li class="separator">|</li>
-                <li><a href="music.html" class="active">Music</a></li>
+                <li class="nav-list-item"><a href="./music.html" class="nav-list-link active">Music</a></li>
             </ul>
         </nav>
-        <label class="theme-toggle">
-            <input type="checkbox" id="theme-switcher">
-            <span class="emoji">🌞</span>
+        <label id="theme-toggle">
+            <input type="checkbox" id="theme-toggle-switch" aria-label="Toggle theme">
+            <span id="theme-icon">🌞</span>
         </label>
     </header>
-    <div class="content">
+    <main>
         <div class="music-container">
             <div class="music-track">
                 <img src="../assets/images/hey_ya.webp" alt="Music Cover" class="music-cover" />
                 <div class="music-info">
-                    <p>Outkast - Hey Ya!</p>
+                    <p>Outkast</p>
+                    <p>Hey Ya!</p>
                     <audio controls src="../assets/audio/hey_ya.mp3"></audio>
                 </div>
             </div>
             <div class="music-track">
                 <img src="../assets/images/ashro.webp" alt="Music Cover" class="music-cover" />
                 <div class="music-info">
-                    <p>Playboi Carti - MOJO JOJO (Ashro edit)</p>
+                    <p>Playboi Carti</p>
+                    <p>MOJO JOJO (Ashro edit)</p>
                     <audio controls src="../assets/audio/Playboi Carti - MOJO JOJO (Ashro Edit).mp3"></audio>
                 </div>
             </div>
         </div>
-    </div>
+    </main>
+
+    <footer>
+        <p>made with <span class="heart">❤️</span></p>
+        <a href="https://html5.validator.nu/?doc=https%3A%2F%2Flizardguppy.com" class="validator-image-container">
+            <img src="../assets/images/html5-validator-badge.svg" alt="HTML5 Valid" class="validator-image">
+        </a>
+    </footer>
     <script src="../assets/scripts/theme.js"></script>
 </body>
 

@@ -1,11 +1,11 @@
 
 let button = document.getElementById("button");
 let audio = document.getElementById("audio");
-let image = document.getElementById("image");
+let image = document.getElementById("guppy-image");
 let flipInterval;
 let flipped = false;
 const interval = 375;
-audio.volume = 0.7;
+audio.volume = 0.4;
 
 function flipImage() {
     flipped = !flipped;
