@@ -1,9 +1,10 @@
 h1 {
+    margin-top: 48px;
     text-align: center;
 }
 
 #gif {
-    width: 95%;
+    width: 90%;
     max-width: 100%;
 }
 
@@ -17,20 +18,20 @@ h1 {
 /* Medium screens and up */
 @media (min-width: 600px) {
     #gif {
-        width: 75%;
+        width: 80%;
     }
 }
 
 /* Medium-large screens and up */
 @media (min-width: 800px) {
     #gif {
-        width: 70%;
+        width: 75%;
     }
 }
 
 /* Large screens and up */
 @media (min-width: 1024px) {
     #gif {
-        width: 60%;
+        width: 65%;
     }
 }
