@@ -4,7 +4,7 @@ h1 {
 }
 
 #gif {
-    width: 90%;
+    width: 95%;
     max-width: 100%;
 }
 
@@ -18,20 +18,20 @@ h1 {
 /* Medium screens and up */
 @media (min-width: 600px) {
     #gif {
-        width: 80%;
+        width: 75%;
     }
 }
 
 /* Medium-large screens and up */
 @media (min-width: 800px) {
     #gif {
-        width: 75%;
+        width: 70%;
     }
 }
 
 /* Large screens and up */
 @media (min-width: 1024px) {
     #gif {
-        width: 65%;
+        width: 60%;
     }
 }
